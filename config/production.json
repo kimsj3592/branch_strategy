@@ -1,0 +1,20 @@
+{
+  "environment": "production",
+  "port": 8080,
+  "apiPrefix": "api/v1",
+  "logLevel": "info",
+  "database": {
+    "url": "postgresql://prod-server:5432/branch_strategy_prod",
+    "ssl": true
+  },
+  "redis": {
+    "url": "redis://prod-redis:6379"
+  },
+  "jwt": {
+    "secret": "PRODUCTION_SECRET_KEY_FROM_ENV",
+    "expiresIn": "1h"
+  },
+  "cors": {
+    "origin": "https://yourdomain.com"
+  }
+}
