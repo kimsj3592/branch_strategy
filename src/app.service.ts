@@ -8,7 +8,7 @@ export class AppService {
 
   getHealth(): object {
     console.log('test');
-    console.log('test2');
+    console.log('test1');
     return {
       status: 'ok',
       timestamp: new Date().toISOString(),
