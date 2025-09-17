@@ -1,0 +1,20 @@
+{
+  "environment": "development",
+  "port": 3000,
+  "apiPrefix": "api/v1",
+  "logLevel": "debug",
+  "database": {
+    "url": "postgresql://localhost:5432/branch_strategy_dev",
+    "ssl": false
+  },
+  "redis": {
+    "url": "redis://localhost:6379"
+  },
+  "jwt": {
+    "secret": "dev-secret-key-change-in-production",
+    "expiresIn": "24h"
+  },
+  "cors": {
+    "origin": "http://localhost:3000"
+  }
+}
