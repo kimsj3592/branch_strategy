@@ -11,6 +11,7 @@ export class AppService {
     console.log('test1');
     console.log('git test!!!!')
     console.log('for git test!')
+    console.log('third test')
     return {
       status: 'ok',
       timestamp: new Date().toISOString(),
