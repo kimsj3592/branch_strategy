@@ -9,6 +9,7 @@ export class AppService {
   getHealth(): object {
     console.log('test');
     console.log('test1');
+    console.log('git test!!!!')
     return {
       status: 'ok',
       timestamp: new Date().toISOString(),

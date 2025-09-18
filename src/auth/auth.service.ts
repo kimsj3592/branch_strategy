@@ -2,13 +2,11 @@ import { Injectable } from '@nestjs/common';
 import { LoginDto } from './dto/login.dto';
 import { RegisterDto } from './dto/register.dto';
 
-
 @Injectable()
 export class AuthService {
   private users = []; // 실제로는 데이터베이스 사용
 
   async login(loginDto: LoginDto) {
-    // 실제 구현에서는 JWT 토큰 생성, 비밀번호 검증 등
     const user = this.users.find((u) => u.email === loginDto.email);
 
     if (!user) {
